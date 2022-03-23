@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="booststrap.min.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Productos</a> 
+    </div>
+  </div>
+</nav>
+<br><br>
+<div class="container">
+  <!--Aplicacion-->
+  <div class="col col-md">
+
+      <!--Formulario-->
+      <div class="mb-1">
+          <div class="card">
+              <div class="card-header">
+                  <h4>Agregar Producto</h4>
+              </div>
+              
+              <form action="" id="producto-formulario" class="card-body">
+                  <div class="form-group">
+                      <input type="text" 
+                             id="nombre" 
+                             placeholder="Nombre de producto" 
+                             class="form-control">                     
+                  </div>
+                  <br>
+                  <div class="form-group">
+                      <input type="number" 
+                             id="precio" 
+                             step="0.01" 
+                             placeholder="Precio de producto" 
+                             class="form-control">  
+                  </div>
+                  <br>
+<!-- Contenedores para el formulario de los productos -->
+<div class="form-group">
+
+  <form action="">
+<input type="number"
+       id="año"
+       step="1"
+       value="2022"
+       class="form-control"
+
+>
+<br>
+<input type="submit"
+       value="Guardar"
+       class="btn btn-primary btn-block"   
+>
+
+
+</form>
+</div>
+
+
+<!-- Lista de Productos -->
+<div id="producto-lista" class="mod-3">
+
+
+
+</div>
+
+
+<!-- Hacemos el llamado de nuestro Java -->
+<script src="App.js"></script>
+</body>
+</html>
